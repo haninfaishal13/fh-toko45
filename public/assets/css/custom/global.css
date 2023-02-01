@@ -1,0 +1,32 @@
+.nav-segment {
+    position: relative;
+    background-color: #f8fafd;
+    padding: .25rem .25rem;
+    border-radius: .3125rem;
+}
+
+.nav-segment .page-nav, .nav-segment .skill-nav {
+    color: #677788;
+    font-size: .8125rem;
+    padding: .4375rem .65625rem;
+    border-radius: .3125rem;
+}
+
+.nav-segment .page-nav:hover, .nav-segment .skill-nav:hover {
+    cursor: pointer;
+}
+
+.nav-segment .page-nav.active, .nav-segment .skill-nav.active {
+    color: #1e2022;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(140,152,164,.25);
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-icon {
+    width: 2.1rem;
+    height: auto;
+}

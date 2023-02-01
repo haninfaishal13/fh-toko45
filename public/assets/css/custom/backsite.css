@@ -1,0 +1,108 @@
+:root {
+    --blue-60: #3399ff;
+    --blue-40: #0066cc;
+    --orange-60: #ff9933;
+    --orange-50: #ff8000;
+    --orange-40: #cc6600;
+}
+
+/* Color */
+.bg-blue-60 {
+    background: var(--blue-60);
+}
+
+.bg-blue-40 {
+    background: var(--blue-40);
+}
+
+.bg-orange-60 {
+    background: var(--orange-60);
+}
+
+.bg-orange-50 {
+    background: var(--orange-50);
+}
+
+#side-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    min-width: 250px;
+    max-width: 250px;
+    transition: 0.3s;
+}
+
+.main-content {
+    margin-left: 250px;
+    transition: 0.3s;
+}
+
+.main-content.full {
+    margin-left: 0px;
+}
+
+#side-nav.nonactive {
+    margin-left: -250px;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar li {
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+.sidebar li.active {
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar li.active a {
+    color: #000;
+}
+
+.sidebar li.active:hover {
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+
+@media(max-width: 767px) {
+    #side-nav {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+        transition: 0.5px;
+    }
+    #side-nav.active {
+        margin-left: 0px;
+    }
+
+    .main-content {
+        margin-left: 0px;
+    }
+}
+
+
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
